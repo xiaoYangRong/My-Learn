@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="../css/reg.css">
+
+<meta charset="UTF-8">
+<title>用户注册</title>
+<script type="text/javascript">
+function check() {
+    var u=document.getElementById("user");
+    var p1=document.getElementById("pw1");
+    var p2=document.getElementById("pw2");
+    var e=document.getElementById("em");
+    if(u.value=="")
+    {
+        alert("请输入用户名！");
+    }
+    else if(p1.value=="")
+    {
+        alert("请输入密码！");
+    }
+    else if(p2.value=="")
+    {
+        alert("请输入密码！");
+    }
+    else if(p1.value!=p2.value)
+    {
+        alert("两次密码不同请重新输入！");
+    }
+    else if(e.value=="")
+    {
+        alert("请输入邮箱！");
+    }
+    else
+    {
+        alert("提交成功！");
+    }
+}
+
+</script>
+</head>
+<body>
+<form action="" onsubmit="return check();">
+<table border="2px"   bordercolor="#0073ff" 	width="900" height="400"  align="center" cellpadding="0" cellspacing="0">
+ <tr>
+   <th colspan="3" id="user">Crate an Account  </th>
+ </tr>
+ <tr>
+   <td rowspan="8" width="350"> <img src="../image/flower.png" /></td>
+ </tr>
+ <tr>
+   <td>Username：</td> 
+   <td><input type="text" name="username" id="username"/>
+   <span style="color:red">*</span></td>
+   
+ </tr>
+ <tr>
+    <td>Password：</td>
+    <td><input type="password" name="password" id="password"/>
+    <span style="color:red">*</span></td>
+   
+ </tr>
+ <tr>
+    <td>Confirm Password：</td>
+    <td><input type="password" name="password" id="password"/>
+    <span style="color:red">*</span></td>
+ </tr>
+ <tr>
+    <td>E-mail Address：</td>
+    <td><input type="text" name="address"/>
+    <span style="color:red">*</span></td>
+ </tr>
+ <tr>
+   <td>Sex：</td>
+   <td><input type="radio" name="sex" id="male" checked="checked"/>male
+       <input type="radio" name="sex" id="female"/>female
+   </td>
+ </tr>
+ <tr>
+   <td>Degree of Education：</td>
+   <td>
+      <select name="culture" id="culture">
+        <option  value="benke" selected="selected">bachelor college</option>
+        <option  value="dazhuan">junior college</option>        
+        <option  value="gaozhong">senior high school</option>
+        <option  value="chuzhong">junior high school</option>
+        <option  value="xiaoxue">primary school</option>
+      </select>
+   </td>
+ </tr>
+ <tr>
+   <td></td>
+   <td>
+     <button name="submit" type="submit">submit</button>
+     <button name="reset" type="reset">reset</button>
+   </td>
+ </tr>
+ 
+</table>
+
+</form>
+</body>
+</html>

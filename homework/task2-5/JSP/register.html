@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link type="text/css" href="register.css" rel="stylesheet">
+    <script type="text/javascript"></script>
+    <title>用户注册</title>
+</head>
+<body>
+<script>
+    function Formcheck()
+    {
+        if (form1.NAME.value=="")
+        {
+            alert("请输入用户名!!!");
+            form1.NAME.focus();
+            return false;
+        }
+        if (form1.PWD.value=="")
+        {
+            alert("请输入密码!!!");
+            form1.PWD.focus();
+            return false;
+        }
+        if (form1.EMAIL.value=="")
+        {
+            alert("请输入电子邮箱!!!");
+            form1.NAME.focus();
+            return false;
+        }
+        if (form1.PWD.value!=form1.PWD1.value)
+        {
+            alert("两次密码不一致，请重新输入!");
+            form1.PWD.focus();
+            return false;
+        }
+    }
+
+</script>
+<form action="" name="form1" onsubmit="return Formcheck()">
+    <table>
+        <tbody>
+            <tr>
+                <td colspan="3" class="tdtitle">用户注册</td>
+            </tr>
+            <tr>
+                <td rowspan="7" class="td1"><img src="image/img1.jpg" alt=""></td>
+                <td class="td2">用户名：</td>
+                <td class="td3"><input type="text" name="NAME" ></td>
+            </tr>
+            <tr>
+                <td class="td2">密码：</td>
+                <td class="td3"><input type="password" name="PWD" ></td>
+            </tr>
+            <tr>
+                <td class="td2">确认密码：</td>
+                <td class="td3"><input type="password" name="PWD1" ></td>
+            </tr>
+            <tr>
+                <td class="td2">电子邮箱：</td>
+                <td class="td3"><input type="text" name="EMAIL" ></td>
+            </tr>
+            <tr>
+                <td class="td2">性别：</td>
+                <td class="td3"><input type="radio" name="sex">男 <input type="radio" name="sex">女</td>
+            </tr>
+            <tr>
+                <td class="td2">教育程度：</td>
+                <td class="td3">
+                    <form>
+                        <select>
+                            <option value="本科">本科</option>
+                            <option value="专科">专科</option>
+                            <option value="高中学历">高中学历</option>
+                        </select>
+                    </form>
+                </td>
+            </tr>
+            <tr>
+                <td class="td2"></td>
+                <td class="td3"><input type="submit"  name="submit" value="提交"><input type="reset" value="重填" style="margin-left: 10px"></td>
+            </tr>
+        </tbody>
+    </table>
+</form>
+</body>
+</html>

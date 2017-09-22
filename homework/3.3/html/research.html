@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+#logo{width:900px;height:180px;}
+li{float:left;  list-style-type:none;  margin:0px;padding:10px 30px; font:20px gray;list-height:30px;}
+#lead{ width:900px;  height:50px;  background:url(../image/lead.png);}
+img{width:900px; height:200px;}
+a{text-decoration:none;color:gray;}
+a:active{color:blue;}
+a:hover{color:orange;}
+#textfield{color:gray;}
+#submit1{color:gray;background-color:#ff8000;}
+#left{width:260px;height:630px;float:left;background:#e2e2e2;background-repeat:repeat-y;padding:20px;background:url(../image/login.jpg);}
+#right{width:560px;height:630px;float:left;background-color:#e2e2e2;padding:20px;}
+#submit{color:gray; width:200px; height:35px;background-color:#ff8000;}
+
+</style> 
+</head>
+<body>
+
+<div id="logo"><img alt="" src="../image/logo.png"></div>
+<div id="lead"  >
+   <ul>   
+     <li><a href="#">提问</a></li>
+     <li><a href="#">首页</a></li>
+     <li><a href="#">话题</a></li>
+     <li><a href="#">发现</a></li>
+     <li><a href="#">消息</a></li> 
+     <li><form id="form1" name="form1" methed="post" action="">
+        <input type="text" name="textfield" id="textfield" value="输入查询内容："/>
+        <input type="button" name="submit1"  id="submit1" value="提交"/>
+     </form></li>
+   </ul> 
+   </div>
+
+<div id="main">
+   <div id="left">
+   <form id="form1" name="form1" methed="post" action="">
+        账号：<input type="text" name="textfield" id="number" value=""/><br><br>
+        
+        密码：<input type="password" name="password" id="password" value=""/><br>
+        
+        <input type="button" name="submit2"  id="submit2" value="注册"/>
+        <input type="button" name="login"  id="login" value="登录"/>
+     </form>
+   </div>
+   <div id="right">
+   <form id="form" name="form" methed="post" action="../jsp/submit1.jsp">
+   <h3>问卷调查区</h3>
+   <p>第1题[单项选择题]<br>你的性别(必答)：</p>
+   <hr>
+   <input name="rdoSex" type="radio" value="女" />女
+   <input name="rdoSex" type="radio" value="男" />男
+   <p>第2题[单项选择题]<br>你每个月的生活费(必答)：</p>
+   <input type="radio" name="fee" value="500以下"/>500以下
+   <input type="radio" name="fee" value="500-800"/>500-800
+   <input type="radio" name="fee" value="800以上"/>800以上
+   <hr>
+   <p>第3题[单项选择题]<br>你经常读书吗？(课本及相关专业书籍除外)：</p>
+   <input type="radio" name="read" value="有时间就读"/>有时间就读
+   <input type="radio" name="read" value="偶尔读"/>偶尔读
+   <input type="radio" name="read" value="很少读"/>很少读
+   <input type="radio" name="read" value="几乎不"/>几乎不
+   <hr>
+   <p>第4题[多项选择题]<br>你喜欢哪方面的书籍？(必答)：</p>
+   <input type="checkbox" name="like" value=" 文学"> 文学
+   <input type="checkbox" name="like" value=" 历史"> 历史
+   <input type="checkbox" name="like" value=" 哲学"> 哲学
+   <input type="checkbox" name="like" value="科幻"> 科幻
+   <input type="checkbox" name="like" value="小说体裁"> 小说体裁
+   <input type="checkbox" name="like" value="其他"> 其他
+   <hr>
+   <p>第5题[多项选择题]<br>你经常以什么样的方式读书？(必答)：</p>
+   <input type="checkbox" name="how" value="去书店买"> 去书店买
+   <input type="checkbox" name="how" value="去图书馆借"> 去图书馆借
+   <input type="checkbox" name="how" value="网上阅读"> 网上阅读
+   <input type="checkbox" name="how" value="下载阅读 "> 下载阅读  
+   <input type="checkbox" name="how" value="其他" > 其他
+   <hr>
+   <input type="submit" name="submit"  id="submit" value="提交" size=6/>
+   </form>
+   </div>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+#all{
+    background: red;
+    width: 500px;
+    height: 300px;
+    margin: 200px auto;
+}
+#title{
+    background: dodgerblue;
+    width: 500px;
+    height: 30px;
+    text-align: center;
+    padding-top: 7px;
+}
+#center{
+    background: lawngreen;
+    width: 500px;
+    height: 270px;
+}
+#centers{
+    background: grey;
+    width: 445px;
+    height: 255px;
+    padding: 15px 10px 0px 45px;
+}
+#submit{
+    margin-right: 15px;
+}

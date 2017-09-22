@@ -1,0 +1,85 @@
+<! DOCTYPE html>
+<html lang="en">
+<head> 
+<meta charset="UTF-8"> 
+<link type="text/css" href="register.css" rel="stylesheet"> 
+<script type="text/javascript"></script>
+<title>user registration</title>
+</head>
+<body>
+	<script>
+		    function Formcheck() {
+			if (form1.NAME.value == "") {
+				alert("Please enter user name !!!");
+				form1.NAME.focus();
+				return false
+			}
+			if (form1.PWD.value == "") {
+				alert("Please enter password !!!");
+				form1.PWD.focus();
+				return false
+			}
+			if (form1.EMAIL.value == "") {
+				alert("please enter email!");
+				form1.NAME.focus();
+				return false
+			}
+			if (form1.PWD.value != form1.PWD1.value) {
+				alert("two passwords are inconsistent, please re - enter!");
+				form1.PWD.focus();
+				return false
+			}
+		}
+	</script>
+	<form action="" name="form1" onsubmit="return Formcheck ()">	    
+		<table>	        
+			<tbody>
+				<tr>
+				<td colspan="3" class="tdtitle">user registration</td>             
+				</tr>      
+				<tr>              
+					<td rowspan="7" class="td1"><img src="image/img1.jpg" alt=""></td>	                
+					<td class="td2">username:</td>                 
+					<td class="td3"><input type="text" name="NAME"></td>	            
+				</tr>            
+				<tr>	                
+					<td class="td2">Password:</td>                 
+					<td class="td3"><input type="password" name="PWD"></td>          
+				</tr>         
+				<tr>					                
+					<td class="td2">Confirm Password:</td>                 
+					<td class="td3"><input type="password" name="PWD1"></td>					            
+				</tr>			            
+				<tr>		                
+					<td class="td2">E-mail:</td>                 
+					<td class="td3"><input type="text" name="EMAIL"></td>					            
+				</tr>				            
+				<tr>				                
+					<td class="td2">gender:</td>                 
+					<td class="td3"><input type="radio" name="sex"> male <input
+						type="radio" name="sex"> female</td>             
+				</tr>				            
+				<tr>				                
+					<td class="td2">Education:</td>                 
+					<td class="td3">                    
+						<form>
+					    	<select>							                            
+								<option value="undergraduate">undergraduate</option>							                            
+								<option value="specialist">specialist</option>								                            
+								<option value="high school education">high school
+									education</option>                         
+							</select>                     
+						</form>                 
+					</td>             
+				</tr>			            
+				<tr>				                
+					<td class="td2"></td>                 
+					<td class="td3"><input type="submit" name="submit"
+						value="submit"><input type="reset" value="reset"
+						style="margin-left: 10px"></td>             
+				</tr>			        
+			</tbody>		    
+		</table>
+	</form>
+</body>
+</html>

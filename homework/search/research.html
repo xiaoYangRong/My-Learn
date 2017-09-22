@@ -1,0 +1,82 @@
+<html>
+<head>
+<style type="text/css">
+div#container{width:880px;border-style: solid; border-width: 3px;border-color: green;}
+div#header {}
+div#menu {background-color:#ffff99;height:200px;width:280px;float:left;}
+div#content {height:1000px;width:600px;float:left;}
+div#footer {background-color:#99bbbb;clear:both;text-align:center;}
+h1 {margin-bottom:0;}
+h2 {margin-bottom:0;font-size:18px;}
+ul {margin:0;}
+li {list-style:none;}
+hr{ size:1; align:left; color:blue ;width:600px }
+p {line-height:20px;font-size:14px;}
+</style>
+</head>
+
+<body>
+<div id="container">
+<div id="header">
+<img src="head.jpg" />
+</div>
+
+<div id="menu">
+<img src="left.jpg" />
+</div>
+
+<div id="content">
+	<form action="submit.jsp" method="post" name="form">
+		<p>第一题 [单选题]</p>
+		<p>你的性别 （必答）</p>
+		<hr/>
+		<input type="radio" name="sex" value="a">男 &nbsp; &nbsp; <input
+			type="radio" name="sex" value="b"> 女 <br />
+
+		<p>第二题 [单选题]</p>
+		<p>你每个月的生活费 （必答）</p>
+		<hr/>
+		<input type="radio" name="fee" value="a">500以下 &nbsp; &nbsp; <input
+			type="radio" name="fee" value="b"> 500-- 800 &nbsp; &nbsp; <input
+			type="radio" name="fee" value="c">800以上 <br />
+
+		<p>第三题 [单选题]</p>
+		<p>你经常读书吗？</p>
+		<hr />
+		<input type="radio" name="time" value="a">有时间就读 &nbsp; &nbsp; <input
+			type="radio" name="time" value="b"> 偶尔读 &nbsp; &nbsp; <input
+			type="radio" name="time" value="c">很少读 &nbsp; &nbsp; <input
+			type="radio" name="time" value="d">几乎不 <br />
+
+		<p>第四题 [多选题]</p>
+		<p>你喜欢哪方面的书？</p>
+		<hr />
+		<input type="checkbox" name="book" value="文学        ">文学 &nbsp;
+		&nbsp;
+		 <input type="checkbox" name="book" value="历史        ">历史 &nbsp; &nbsp;
+		 <input type="checkbox" name="book" value="哲学        ">哲学 &nbsp; &nbsp;
+		 <input type="checkbox" name="book" value="科幻        ">科幻	<br />
+
+		<p>第五题 [多选题]</p>
+		<p>你经常以什么样的方式读书？</p>
+		<hr/>
+		<input type="checkbox" name="method" value="去书店买          ">去书店买
+		&nbsp; &nbsp; 
+		<input type="checkbox" name="method"
+			value="去图书馆借         "> 去图书馆借 &nbsp; &nbsp;
+	   <input	type="checkbox" name="method" value="网上阅读           ">网上阅读
+		&nbsp; &nbsp; 
+		<input type="checkbox" name="method"
+			value="下载阅读           ">下载阅读 &nbsp; &nbsp;
+		<input type="checkbox" name="method" value="其他          ">其他 <br />
+		<hr />
+		<input type="submit" value="提交" name="Submit">
+	</form>
+	</div>
+
+<div id="footer">Copyright www.niit.edu.cn</div>
+
+</div>
+
+</body>
+</html>

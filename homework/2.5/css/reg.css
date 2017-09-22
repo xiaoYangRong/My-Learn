@@ -1,0 +1,14 @@
+@charset "UTF-8";
+*{
+	font-family:"黑体";
+	font-size:14px;
+}
+ #user{
+	background:#0073ff;	
+}
+
+img{
+	align:center;
+	width:300px;
+	margin:20px;
+}

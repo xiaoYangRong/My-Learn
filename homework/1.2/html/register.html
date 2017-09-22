@@ -1,0 +1,64 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link href="../css/register-css.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="../js/register-js.js"></script>
+</head>
+<body>
+<div id="all">
+<div id="title"><strong>用户注册</strong></div>
+    <div id="center">
+        <div id="centers">
+            <form action="#">
+        <table border="1" bordercolor="#000" cellspacing="0" cellpadding="5" style="border-collapse:collapse">
+        <tr>
+            <th rowspan="8px" width="150px"><img src="../img/1.jpg" style="width: 110px;height: auto"></th>
+        </tr>
+        <tr>
+            <th>用户名</th>
+            <th><input id="user" type="text"></th>
+        </tr>
+        <tr>
+            <th>密码</th>
+            <th><input id="pw1" type="password"></th>
+        </tr>
+        <tr>
+            <th>确认密码</th>
+            <th><input id="pw2" type="password"></th>
+        </tr>
+        <tr>
+            <th>电子邮箱</th>
+            <th><input id="em" type="email"></th>
+        </tr>
+
+        <tr>
+            <th>性别</th>
+            <th><label>男</label>
+                <input id="s" type="radio" value="1"  name="gender" checked/>
+                <label>女</label>
+                <input type="radio" value="2"  name="gender" /></th>
+        </tr>
+        <tr>
+            <th>教育程度</th>
+            <th><select>
+                <option value="本科" selected = "selected">本科</option>
+                <option value="专科">专科</option>
+                <option value="高中">高中</option>
+                <option value="初中">初中</option>
+                <option value="小学">小学</option>
+            </select></th>
+        </tr>
+        <tr>
+            <th></th>
+            <th><input id="submit" type="submit" value="确定"  onclick="sb()" />
+                <input type="reset" value="重置" /></th>
+        </tr>
+    </table>
+            </form>
+        </div>
+    </div>
+</div>
+</body>
+</html>
